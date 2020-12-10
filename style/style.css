@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+}
+/***********************Header Start*******************/
+header{
+    background: url(../img/тшлу-2-ип.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header-nav{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header-nav ul a{
+    text-decoration: none;
+    color: #434141;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 19px 24px 21px 28px;
+    display: inline-block;
+
+}
+.header-nav ul{
+    list-style: none;
+    display: flex;
+}
+.header-nav ul a:hover{
+    background-color: #c1bc45;
+    color: seashell;
+    transition: 0.5s;
+}
+.header-nav a img{
+    margin-top: 10px;
+    margin-left: 17px;
+}
+.header-content{
+    margin: auto;
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.header-content h1{
+    color: #c1bc45;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: 72px;
+    margin-bottom: 15px;
+}
+.header-content p{
+    font-size: 18px;
+    color: #4d4d4d;
+    line-height: 13px;
+}
+.header-content p span{
+    color: black;
+    font-weight: 900;
+    line-height: 15px;
+}
+/***********************Header End*******************/
+/***********************Main Start*******************/
+main{
+    margin-top: 88px;
+    margin-bottom: 130px;
+}
+main .main-nike{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+main .main-nike h2{
+    font-size: 20px;
+    line-height: 15px;
+    color: black;
+}
+main .main-nike h2 span{
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 700;
+}
+.left_img{
+    border-radius: 10px;
+}
+main .main-nike img{
+    margin-bottom: 21px;
+}
+.main-left,
+.main-right{
+    width: 540px;
+}
+.main-left p{
+    font-size: 15.67px;
+    color: #333333;
+    margin-top: 17px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+}
+.main-right .right-item{
+    display: flex;
+    border: 4px solid #aeaeae;
+    margin-bottom: 20px;
+}
+.main-right img{
+    margin: 14px 38px 13px 23px;
+}
+.main-right .right-item h3{
+    line-height: 15px;
+    margin-top: 15px;
+}
+.main-right .right-item p{
+    line-height: 24px;
+    margin-top: 20px;
+    letter-spacing: 0.3px;
+    color: #919191;
+}
+.main-right .right-item:hover{
+    cursor: pointer;
+    border-color: #f0efb6;
+    transition: 0.5s;
+}
+/***********************Main End*******************/
+/***********************Footer Start*******************/
+footer{
+    display: flex;
+    flex-direction: column;
+    background: #eee9e9;
+}
+.foot-nav{
+    max-width: 1110px;
+    width: 100%;
+    margin: 5px auto ;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 65px 0;
+}
+.foot-navigation{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-grow: 1;
+}
+.foot-navigation a {
+    display: inline-block;
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 18px;
+    line-height: 13px;
+    margin-top: 20px;
+    border-bottom: 4px solid transparent;
+    padding-bottom: 14px;
+}
+.foot-navigation a:hover{
+    cursor: pointer;
+    color: #ff0000;
+    border-bottom: 4px solid #ff0000;
+    transition: 0.5s;
+}
+.foot-h3{
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/***********************Footer End*******************/
+
+/* Adaptate max-width: */
+
+@media(max-width:1115px){
+    .header-ul{
+        max-width: 1110px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    .header-logo, .foot-logo{
+        display: none;
+    }
+    .main-nike{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-title{
+        margin-bottom: 10px;
+    }
+    .foot-navigation{
+        max-width: 1110px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .foot-navigation li a{
+        margin: 0 15px;
+    }
+    .header-content{
+        max-width: 1110px;
+        width: 100%;
+        padding-left: 15px;
+    }
+    .main-left{
+        margin-bottom: 15px;
+    }
+    .main-left img{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .main-left{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .main-right{
+        width: 90%;
+    }
+    .main-right .right-item p{
+        font-size: 15px;
+        line-height: 15px;
+        width: 90%;
+        padding-bottom: 10px;
+    }
+    .main-right .right-item img{
+        width: 40%;
+        height: 40%;
+    }
+    .item-info h3{
+        font-size: 15px;
+    }
+    .main{
+        margin-bottom: 10px;
+    }
+    .foot-navigation li{
+        /* padding-bottom: 10px; */
+        margin-bottom: 9px;
+    }
+
+}
